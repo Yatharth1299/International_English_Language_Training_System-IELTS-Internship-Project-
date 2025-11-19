@@ -1,0 +1,90 @@
+# ----------------------
+# Python artifacts
+# ----------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+# ----------------------
+# Virtual environments
+# ----------------------
+myenv
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.env
+# ----------------------
+# Build & distribution
+# ----------------------
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+# ----------------------
+# Logs & debug
+# ----------------------
+*.log
+logs/
+debug.log
+# ----------------------
+# Unit test / coverage
+# ----------------------
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+# ----------------------
+# Jupyter / notebooks
+# ----------------------
+.ipynb_checkpoints
+# ----------------------
+# IDE / Editor configs
+# ----------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+# ----------------------
+# System files
+# ----------------------
+.DS_Store
+Thumbs.db
+# ----------------------
+# Project specific
+# ----------------------
+# API keys & sensitive configs
+config.py         # if it contains secrets (use config_loader + .env instead)
+# Data artifacts (don’t push raw or temporary data)
+data/sample_tests/*
+!data/sample_tests/README.md   # keep placeholder/readme if needed
+data/rubrics/*
+!data/rubrics/README.md
+# Vector DB / cache
+memory/*.db
+memory/*.json
+memory/*.sqlite
+# Audio/large files
+*.wav
+*.mp3
+*.flac
+# ----------------------
+# Docker (if used later)
+# ----------------------
+*.pid
+*.seed
+*.bak
+*.tar
+*.snappy
